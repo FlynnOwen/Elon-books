@@ -16,10 +16,10 @@ obj = s3.Object(bucket,key)
 books = json.load(obj.get()['Body'])
 
 # Twitter API credentials
-consumer_key = "1x7blAMmbHu16oe8ehAagCAJt"
-consumer_secret = "aw49JzIEbOtOPdSNYFdbliGJ8alIs6Gb5KHR2zj2SzfPNOGehe"
-access_key = "1254559121111576576-ogYrRmuuVs6OQgH2JcoPOiPomoO3x8"
-access_secret = "3kawz4yqbZrdOUzwCJHWqtSySXtHA5mv2wFbAKiUrcfek"
+consumer_key = ""*****"
+consumer_secret = "*****"
+access_key = ""*****"
+access_secret = ""*****"
 
 
 def get_all_tweets(screen_name):
@@ -116,9 +116,9 @@ ElonBookDict = markov_chain(elonbooks)
 random.seed(int(time.time()))
 tweet = generate_sequence(ElonBookDict)
 
-auth = tweepy.OAuthHandler("1x7blAMmbHu16oe8ehAagCAJt", "aw49JzIEbOtOPdSNYFdbliGJ8alIs6Gb5KHR2zj2SzfPNOGehe")
-auth.set_access_token("1254559121111576576-ogYrRmuuVs6OQgH2JcoPOiPomoO3x8",
-                      "3kawz4yqbZrdOUzwCJHWqtSySXtHA5mv2wFbAKiUrcfek")
+auth = tweepy.OAuthHandler(""*****", ""*****")
+auth.set_access_token(""*****",
+                      ""*****")
 
 # Create API object
 api = tweepy.API(auth, wait_on_rate_limit=True,
