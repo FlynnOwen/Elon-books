@@ -1,4 +1,4 @@
 # Elon-books
 
 # AWS architecture:
-![]/personal_project.PNG
+![](personal_project.PNG)
